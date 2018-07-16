@@ -2,4 +2,4 @@
 <h2><%= @post.name %></h2>
 <p><%= @post.content %></p>
 
-<form action="/posts/" method="POST">
+<form action="/posts/<%=@post.id%>" method="POST">
