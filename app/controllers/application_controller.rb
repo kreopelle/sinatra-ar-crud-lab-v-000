@@ -37,6 +37,6 @@ class ApplicationController < Sinatra::Base
     redirect to("/posts/#{post.id}")
   end
 
-  
+  post '/models/:id/delete'
 
 end
