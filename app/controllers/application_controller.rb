@@ -31,6 +31,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id'
+    post = Post.find(params[:id])
 
 
 end
