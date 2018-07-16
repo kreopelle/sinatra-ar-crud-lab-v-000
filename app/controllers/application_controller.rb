@@ -30,10 +30,10 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  patch '/posts/:id'
+  patch '/posts/:id' do 
     post = Post.find(params[:id])
     post.update(name: params[:name], content: params[:content])
     post.save
     redirect '/posts'
   end
-end 
+end
