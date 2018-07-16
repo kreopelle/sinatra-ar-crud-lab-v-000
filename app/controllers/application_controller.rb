@@ -33,7 +33,6 @@ class ApplicationController < Sinatra::Base
 
   patch '/posts/:id' do
     post.update(name: params[:name], content: params[:content])
-    post.save
     redirect '/posts'
   end
 
