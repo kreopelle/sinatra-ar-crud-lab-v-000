@@ -34,7 +34,8 @@ class ApplicationController < Sinatra::Base
     post = Post.find(params[:id])
     post.update(name: params[:name], content: params[:content])
     post.save
-  end 
+    redirect '/posts'
+  end
 
 
 end
